@@ -26,7 +26,7 @@ class VerifyStream extends Stream
         parent::__construct($stream, []);
     }
 
-    public function read($length)
+    public function read($length): string
     {
         $string = parent::read($length);
         if (!empty($string)) {
